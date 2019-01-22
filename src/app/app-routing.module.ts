@@ -6,10 +6,17 @@ import { AuthGuard } from './guards/auth.guard';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: 'login', loadChildren: './login/login.module#LoginModule' },
   {
     path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
+    canActivate: [AuthGuard]
+  },
+  { path: 'login', loadChildren: './login/login.module#LoginModule' },
+  {
+    path: 'dashboard',
     loadChildren: './dashboard/dashboard.module#DashboardModule' ,
+    canActivate: [AuthGuard]
   },
   {
     path: 'users',
