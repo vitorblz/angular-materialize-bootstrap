@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AuthService } from '../../login/auth.service';
+
 @Component({
   selector: 'app-admin-layout',
   templateUrl: './admin-layout.component.html',
@@ -7,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminLayoutComponent implements OnInit {
 
-  constructor() {}
+  userAuthenticated: boolean = false;
 
-  ngOnInit() {
-     
+  constructor(private authService: AuthService) {}
+
+  ngOnInit(){
+    this.authService.userAuthenticatedEmitter.subscribe(
+      result => this.userAuthenticated = result
+    );
   }
 
 }
