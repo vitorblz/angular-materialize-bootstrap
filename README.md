@@ -1,5 +1,5 @@
 ## Github Page Teste
-[https://vitorblz.github.io/angular-materialize-bootstrap/dashboard](https://vitorblz.github.io/angular-materialize-bootstrap/dashboard)
+[https://vitorblz.github.io/angular-materialize-bootstrap/](https://vitorblz.github.io/angular-materialize-bootstrap/)
 
 
 ## Terminal Commands
