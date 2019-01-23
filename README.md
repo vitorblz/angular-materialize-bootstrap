@@ -1,4 +1,4 @@
-## Github Page Teste
+## Github Page 
 [https://vitorblz.github.io/angular-materialize-bootstrap/](https://vitorblz.github.io/angular-materialize-bootstrap/)
 
 

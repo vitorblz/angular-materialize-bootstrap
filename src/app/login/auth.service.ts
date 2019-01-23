@@ -19,7 +19,8 @@ export class AuthService {
 
   login(user: User) {
 
-    if (user.login === 'vitorblz@gmail.com') {
+    if (user.login === 'teste@teste.com'
+        && user.password === '123456') {
       this.userAuth = true;
       this.userAuthenticatedEmitter.emit(this.userAuth);
       this.router.navigate(['/']);
